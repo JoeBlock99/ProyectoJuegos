@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c79fa2860d988ba4781f8e52e89803b5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fpsCam: {instanceID: 0}
+  - pickTxt: {instanceID: 0}
+  - knife: {instanceID: 0}
+  - Hammer: {instanceID: 0}
+  - FalshLight: {instanceID: 0}
+  - fileA: {instanceID: 0}
+  - fileB: {instanceID: 0}
+  - fileC: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
