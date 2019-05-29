@@ -70,6 +70,10 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\ScriptCharacters\Enemy.cs" />
     <Compile Include="Assets\ScriptCharacters\HandStuff.cs" />
+    <Compile Include="Assets\toexport\Field_Of_View_trigger.cs" />
+    <Compile Include="Assets\toexport\firstPersonAnimator.cs" />
+    <Compile Include="Assets\toexport\InventoryManager.cs" />
+    <Compile Include="Assets\toexport\zombieAnimatorScript.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Administrator/Proyectos Games/ProjectLab6Juegos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

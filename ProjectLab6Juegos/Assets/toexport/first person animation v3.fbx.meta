@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: f0af4dd60d22fda4899370427bbc765d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Hammer
+    100004: Hammer_end
+    100006: human
+    100008: human_armature
+    100010: Knife
+    100012: Knife_end
+    100014: l  finger general controler
+    100016: l  finger index 4
+    100018: l  finger index 4_end
+    100020: l  finger index 5
+    100022: l  finger index 5_end
+    100024: l  finger middle 2
+    100026: l  finger middle 4
+    100028: l  finger middle 4_end
+    100030: l  finger middle 5
+    100032: l  finger middle 5_end
+    100034: l  finger ring 5
+    100036: l  finger ring 5_end
+    100038: l finger index 1
+    100040: l finger index 2
+    100042: l finger index 3
+    100044: l finger middle 1
+    100046: l finger middle 3
+    100048: l finger pinky 1
+    100050: l finger pinky 2
+    100052: l finger pinky 3
+    100054: l finger pinky 4
+    100056: l finger pinky 4_end
+    100058: l finger pinky 5
+    100060: l finger pinky 5_end
+    100062: l finger pointer (ring pinky )
+    100064: l finger pointer (ring pinky )_end
+    100066: l finger pointer (thumb index middle )
+    100068: l finger pointer (thumb index middle )_end
+    100070: l finger ring 1
+    100072: l finger ring 2
+    100074: l finger ring 3
+    100076: l finger ring 4
+    100078: l finger ring 4_end
+    100080: l finger thumb 1
+    100082: l finger thumb 2
+    100084: l finger thumb 3
+    100086: l finger thumb 3_end
+    100088: l finger thumb 4
+    100090: l finger thumb 4_end
+    100092: l hand ik
+    100094: l hand pointer
+    100096: l hand pointer_end
+    100098: l- lowe arm
+    100100: l- lowe arm_end
+    100102: l- upper arm
+    100104: r - hand ik
+    100106: r finger general controler
+    100108: r finger pinky 1
+    100110: r finger pinky 2
+    100112: r finger pinky 3
+    100114: r finger pinky 4
+    100116: r finger pinky 4_end
+    100118: r finger pinky 5
+    100120: r finger pinky 5_end
+    100122: r finger ring 1
+    100124: r finger ring 2
+    100126: r finger ring 3
+    100128: r finger ring 4
+    100130: r finger ring 4_end
+    100132: r finger ring 5
+    100134: r finger ring 5_end
+    100136: r finger thumb 1
+    100138: r finger thumb 2
+    100140: r finger thumb 3
+    100142: r finger thumb 3_end
+    100144: r hand pointer
+    100146: r hand pointer_end
+    100148: r- finger index 1
+    100150: r- finger index 1.001
+    100152: r- finger index 3
+    100154: r- finger index 4
+    100156: r- finger index 4_end
+    100158: r- finger index 5
+    100160: r- finger index 5_end
+    100162: r- finger middle 1
+    100164: r- finger middle 2
+    100166: r- finger middle 3
+    100168: r- finger middle 4
+    100170: r- finger middle 4_end
+    100172: r- finger middle 5
+    100174: r- finger middle 5_end
+    100176: r- finger pointer
+    100178: r- finger pointer (ring pinky)
+    100180: r- finger pointer (ring pinky)_end
+    100182: r- finger pointer_end
+    100184: r- lower arm
+    100186: r- lower arm_end
+    100188: r- upper arm
+    100190: r-fin thumb 4
+    100192: r-fin thumb 4_end
+    400000: //RootNode
+    400002: Hammer
+    400004: Hammer_end
+    400006: human
+    400008: human_armature
+    400010: Knife
+    400012: Knife_end
+    400014: l  finger general controler
+    400016: l  finger index 4
+    400018: l  finger index 4_end
+    400020: l  finger index 5
+    400022: l  finger index 5_end
+    400024: l  finger middle 2
+    400026: l  finger middle 4
+    400028: l  finger middle 4_end
+    400030: l  finger middle 5
+    400032: l  finger middle 5_end
+    400034: l  finger ring 5
+    400036: l  finger ring 5_end
+    400038: l finger index 1
+    400040: l finger index 2
+    400042: l finger index 3
+    400044: l finger middle 1
+    400046: l finger middle 3
+    400048: l finger pinky 1
+    400050: l finger pinky 2
+    400052: l finger pinky 3
+    400054: l finger pinky 4
+    400056: l finger pinky 4_end
+    400058: l finger pinky 5
+    400060: l finger pinky 5_end
+    400062: l finger pointer (ring pinky )
+    400064: l finger pointer (ring pinky )_end
+    400066: l finger pointer (thumb index middle )
+    400068: l finger pointer (thumb index middle )_end
+    400070: l finger ring 1
+    400072: l finger ring 2
+    400074: l finger ring 3
+    400076: l finger ring 4
+    400078: l finger ring 4_end
+    400080: l finger thumb 1
+    400082: l finger thumb 2
+    400084: l finger thumb 3
+    400086: l finger thumb 3_end
+    400088: l finger thumb 4
+    400090: l finger thumb 4_end
+    400092: l hand ik
+    400094: l hand pointer
+    400096: l hand pointer_end
+    400098: l- lowe arm
+    400100: l- lowe arm_end
+    400102: l- upper arm
+    400104: r - hand ik
+    400106: r finger general controler
+    400108: r finger pinky 1
+    400110: r finger pinky 2
+    400112: r finger pinky 3
+    400114: r finger pinky 4
+    400116: r finger pinky 4_end
+    400118: r finger pinky 5
+    400120: r finger pinky 5_end
+    400122: r finger ring 1
+    400124: r finger ring 2
+    400126: r finger ring 3
+    400128: r finger ring 4
+    400130: r finger ring 4_end
+    400132: r finger ring 5
+    400134: r finger ring 5_end
+    400136: r finger thumb 1
+    400138: r finger thumb 2
+    400140: r finger thumb 3
+    400142: r finger thumb 3_end
+    400144: r hand pointer
+    400146: r hand pointer_end
+    400148: r- finger index 1
+    400150: r- finger index 1.001
+    400152: r- finger index 3
+    400154: r- finger index 4
+    400156: r- finger index 4_end
+    400158: r- finger index 5
+    400160: r- finger index 5_end
+    400162: r- finger middle 1
+    400164: r- finger middle 2
+    400166: r- finger middle 3
+    400168: r- finger middle 4
+    400170: r- finger middle 4_end
+    400172: r- finger middle 5
+    400174: r- finger middle 5_end
+    400176: r- finger pointer
+    400178: r- finger pointer (ring pinky)
+    400180: r- finger pointer (ring pinky)_end
+    400182: r- finger pointer_end
+    400184: r- lower arm
+    400186: r- lower arm_end
+    400188: r- upper arm
+    400190: r-fin thumb 4
+    400192: r-fin thumb 4_end
+    2100000: skin
+    2100002: 02 - Default
+    2100004: Material__38
+    4300000: human
+    7400000: human_armature|Hit_Hammer
+    7400002: human_armature|Hit_Knife
+    7400004: human_armature|Iddle_Gun
+    7400006: human_armature|Iddle_Hammer
+    7400008: human_armature|Iddle_Knife
+    7400010: human_armature|Iddle_Unarmed
+    9500000: //RootNode
+    13700000: human
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: human_armature|Hit_Hammer
+      takeName: human_armature|Hit_Hammer
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: human_armature|Hit_Knife
+      takeName: human_armature|Hit_Knife
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: human_armature|Iddle_Gun
+      takeName: human_armature|Iddle_Gun
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: human_armature|Iddle_Hammer
+      takeName: human_armature|Iddle_Hammer
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: human_armature|Iddle_Knife
+      takeName: human_armature|Iddle_Knife
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: human_armature|Iddle_Unarmed
+      takeName: human_armature|Iddle_Unarmed
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

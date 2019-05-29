@@ -8,6 +8,9 @@ TagManager:
   - Mochila
   - Hammer
   - Objeto
+  - locked
+  - Exit
+  - cardEntry
   layers:
   - Default
   - TransparentFX
