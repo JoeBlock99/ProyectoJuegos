@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class HandStuff : MonoBehaviour
 {
-    public float range = 1f;
+    public float range;
     private bool OnHand = false;
     private bool mochila = false;
+    private bool cuchillo = false;
+    private bool martillo = false;
     private bool haveACard = false;
     private int items = 0;
     private int capacity = 1;
@@ -16,6 +18,9 @@ public class HandStuff : MonoBehaviour
     public GameObject pickTxt;
     public GameObject getCardtxt;
     public GameObject lockedtxt;
+    public GameObject handknife;
+    public GameObject handhammer;
+    public GameObject handlintern;
     public GameObject knife;
     public GameObject hammer;
     public GameObject lintern;
@@ -26,76 +31,76 @@ public class HandStuff : MonoBehaviour
     public GameObject exitDoor;
     public GameObject StartTxt1;
     public GameObject StartTxt2;
+    public Transform drop;
+    public Transform knifepos;
     RaycastHit hit;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Begining());
+        Instantiate(knife, knifepos.position, knifepos.rotation);
     }
 
     // Update is called once per frame
     void Update()
     {
-            
+
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.tag);
+            Debug.Log(hit.transform.name);
             if (hit.collider.tag == "Objeto")
             {
                 pickTxt.SetActive(true);
                 if (Input.GetMouseButtonDown(0))
                 {
-                    if( mochila == true)
+                    if (mochila == true)
                     {
-                        if (hit.collider.name == "Knife")
+                        if (hit.collider.name == "Knife(Clone)")
                         {
-                            Destroy(hit.collider.gameObject);
-                            knife.SetActive(true);
+                            Destroy(knife);
+                            handknife.SetActive(true);
                             items++;
                             OnHand = true;
                         }
                         if (hit.collider.name == "Hammer")
                         {
                             Destroy(hit.collider.gameObject);
-                            hammer.SetActive(true);
+                            handhammer.SetActive(true);
                             items++;
                             OnHand = true;
                         }
                         if (hit.collider.name == "FlashLight")
                         {
                             Destroy(hit.collider.gameObject);
-                            lintern.SetActive(true);
+                            handlintern.SetActive(true);
                             items++;
                             OnHand = true;
                         }
-                        if (hit.collider.name == "Mochila")
-                        {
-                            Destroy(hit.collider.gameObject);
-                            capacity = 6;
-                            OnHand = true;
-                        }
+
                     }
                     if (OnHand == false & mochila == false)
                     {
 
-                        if (hit.collider.name == "Knife")
+                        if (hit.collider.name == "Knife(Clone)")
                         {
+                            Debug.Log("Si entra");
                             Destroy(hit.collider.gameObject);
-                            knife.SetActive(true);
+                            handknife.SetActive(true);
                             items++;
                             OnHand = true;
                         }
                         if (hit.collider.name == "Hammer")
                         {
                             Destroy(hit.collider.gameObject);
-                            hammer.SetActive(true);
+                            handhammer.SetActive(true);
                             items++;
                             OnHand = true;
                         }
                         if (hit.collider.name == "FlashLight")
                         {
                             Destroy(hit.collider.gameObject);
-                            lintern.SetActive(true);
+                            handlintern.SetActive(true);
                             items++;
                             OnHand = true;
                         }
@@ -114,15 +119,18 @@ public class HandStuff : MonoBehaviour
                         items++;
 
                     }
-
+                    if (hit.collider.name == "Mochila")
+                    {
+                        Destroy(hit.collider.gameObject);
+                        capacity = 6;
+                    }
                 }
-
             }
             else
             {
                 pickTxt.SetActive(false);
             }
-            
+
             if (hit.collider.tag == "locked")
             {
                 lockedtxt.SetActive(true);
@@ -135,7 +143,7 @@ public class HandStuff : MonoBehaviour
             {
                 if (haveACard == false)
                 {
-                    if (hit.collider.tag == "Exit")
+                    if (hit.collider.tag == "Exit" || hit.collider.name == "model" || hit.collider.name == "Panel_low")
                     {
                         getCardtxt.SetActive(true);
                         StartCoroutine(PideCard());
@@ -143,12 +151,23 @@ public class HandStuff : MonoBehaviour
                 }
                 else
                 {
-                    exitDoor.GetComponent<AudioSource>().Play();
-                    hit.collider.gameObject.transform.Translate(new Vector3(0, 0, 2.7f));
-                    StartCoroutine(openExit());
+                    if (hit.collider.tag == "Exit" || hit.collider.name == "model" || hit.collider.name == "Panel_low")
+                    {
+                        exitDoor.GetComponent<AudioSource>().Play();
+                        exitDoor.transform.Translate(new Vector3(0, 0, 2.7f));
+                        StartCoroutine(openExit());
+                    }
                 }
-                
             }
+            /*
+            if (Input.GetMouseButtonDown(1))
+            {
+                if (cuchillo == true)
+                {
+                    handknife.SetActive(false);
+                    //Instantiate(knife, drop.position, drop.rotation);
+                }
+            }*/
         }
     }
     IEnumerator Example()
