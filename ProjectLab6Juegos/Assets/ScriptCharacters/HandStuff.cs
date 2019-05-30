@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class HandStuff : MonoBehaviour
 {
-    public float range;
     private bool OnHand = false;
     private bool mochila = false;
     private bool hasknife = false;
@@ -38,7 +37,7 @@ public class HandStuff : MonoBehaviour
     public GameObject wintxt;
     public Transform drop;
     private float damage = 2;
-    private float rango = 5;
+    private float range = 5;
     RaycastHit hit;
     Animator theAnimator;
     // Start is called before the first frame update
@@ -58,15 +57,17 @@ public class HandStuff : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 theAnimator.SetBool("isA", true);
+                StartCoroutine(atack());
             }
         }
         if (theAnimator.GetBool("hashammer") == true)
         {
             damage = 4;
-            rango = 7;
+            range = 7;
             if (Input.GetMouseButtonDown(0))
             {
                 theAnimator.SetBool("isA", true);
+                StartCoroutine(atack());
             }
         }
         //----------------------------------------------------------------------------------------------------------*
@@ -212,11 +213,13 @@ public class HandStuff : MonoBehaviour
                 {
                     theAnimator.SetBool("hasknife", false);
                     Instantiate(knife, drop.position, drop.rotation);
+                    OnHand = false;
                 }
                 if (hashammer == true)
                 {
                     theAnimator.SetBool("hashammer", false);
                     Instantiate(hammer, drop.position, drop.rotation);
+                    OnHand = false;
                 }
             }
         }
@@ -256,13 +259,18 @@ public class HandStuff : MonoBehaviour
     {
         StartTxt1.SetActive(true);
         print(Time.time);
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(6);
         print(Time.time);
         StartTxt1.SetActive(false);
         StartTxt2.SetActive(true);
         print(Time.time);
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(6);
         print(Time.time);
         StartTxt2.SetActive(false);
+    }
+    IEnumerator atack()
+    {
+        yield return new WaitForSeconds(1);
+        theAnimator.SetBool("isA", false);
     }
 }
