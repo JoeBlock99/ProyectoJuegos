@@ -11,6 +11,7 @@ TagManager:
   - locked
   - Exit
   - cardEntry
+  - enemy
   layers:
   - Default
   - TransparentFX

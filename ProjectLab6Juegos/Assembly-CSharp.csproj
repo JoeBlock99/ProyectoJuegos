@@ -121,6 +121,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\ScriptCharacters\HandStuff.cs" />
+    <Compile Include="Assets\ScriptCharacters\Health.cs" />
     <Compile Include="Assets\ScriptCharacters\Patrulla.cs" />
     <Compile Include="Assets\ScriptCharacters\Target.cs" />
     <Compile Include="Assets\toexport\Field_Of_View_trigger.cs" />
