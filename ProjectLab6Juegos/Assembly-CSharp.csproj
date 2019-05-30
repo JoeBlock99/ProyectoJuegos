@@ -112,6 +112,9 @@
     <Compile Include="Assets\Menu\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Menu\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Menu\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\PauseMenu\manos con animaciones y todo\AnimationScript.cs" />
+    <Compile Include="Assets\PauseMenu\menuPause.cs" />
+    <Compile Include="Assets\PauseMenu\PauseMenu (1).cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
@@ -119,6 +122,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\ScriptCharacters\HandStuff.cs" />
     <Compile Include="Assets\ScriptCharacters\Patrulla.cs" />
+    <Compile Include="Assets\ScriptCharacters\Target.cs" />
     <Compile Include="Assets\toexport\Field_Of_View_trigger.cs" />
     <Compile Include="Assets\toexport\firstPersonAnimator.cs" />
     <Compile Include="Assets\toexport\InventoryManager.cs" />
